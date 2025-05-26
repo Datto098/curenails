@@ -1,0 +1,126 @@
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Northwell fonts */
+@font-face {
+    font-family: 'Northwell';
+    src: url('./assets/fonts/Northwell.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Northwell Alt';
+    src: url('./assets/fonts/Northwell-Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Northwell Swash';
+    src: url('./assets/fonts/Northwell-Swash.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+    background-color: #faf6f6;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #faf6f6;
+    overflow-x: hidden;
+}
+
+.scroll {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header styles */
+.header {
+    transition: all 0.5s ease;
+    background: transparent;
+    transform: translateY(0);
+}
+
+.header.scrolled {
+    /* background: rgba(0, 0, 0, 0.8); */
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    transform: translateY(20px);
+}
+
+/* Menu item styles */
+.menu-item {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.menu-item.active::after {
+    width: 100%;
+}
+
+#render-content-bar ul li.menu-item:hover {
+    color: #ff4646;
+}
+
+#render-content-bar ul li.menu-item:hover::after {
+    background: #ff4646;
+}
+
+#render-content-bar ul li.menu-item {
+    letter-spacing: 10px;
+}
+
+/* Booking button styles */
+.booking-btn {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.booking-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff4646;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.booking-btn:hover::after {
+    transform: scaleX(0);
+}

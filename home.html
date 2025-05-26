@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./all.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./home.css" />
+
+		<title>Home Page</title>
+		<style>
+			.swiper-slide {
+				width: 400px !important;
+				opacity: 0.4;
+				transition: all 0.3s ease;
+			}
+			.swiper-slide-active {
+				opacity: 1;
+			}
+			.swiper-button-next:after,
+			.swiper-button-prev:after {
+				color: white;
+				font-size: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div
+			id="header"
+			class="smooth flex items-center justify-between px-[3rem] py-[2rem] text-white fixed top-0 left-0 right-0 z-50"
+		>
+			<div class="logo">
+				<h1 class="text-2xl">LOGO</h1>
+			</div>
+			<div class="menu">
+				<ul class="flex space-x-4">
+					<li class="menu_item p-4 active">
+						<a href="./home.html">Home</a>
+					</li>
+					<li class="menu_item p-4">
+						<a href="./about.html">About & Careers</a>
+					</li>
+					<li class="menu_item p-4">
+						<a href="./services.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="booking">
+				<a href="./booking.html" class="btn btn-primary"
+					>Book an Appointment</a
+				>
+			</div>
+		</div>
+		<!-- SCROLL -->
+		<div class="scroll">
+			<!-- BANNER -->
+			<div class="banner w-full h-screen relative overflow-hidden">
+				<!-- BANNER IMG -->
+				<div
+					class="banner-bg parallax"
+					style="
+						background: url('./assets/images/Img_1.png') no-repeat
+							center center;
+						background-size: cover;
+						width: 100%;
+						height: 100%;
+					"
+				></div>
+				<!-- BANNER CONTENT -->
+				<h1
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					class="absolute text-6xl top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-nowrap text-white"
+				>
+					<span class="mr-[12rem]">
+						Build
+						<strong
+							class="text-8xl text-[#f95b5b] absolute -translate-y-[55%] -rotate-[16deg] top-[3.2rem] left-[8rem]"
+							>your own</strong
+						>
+					</span>
+					type of nail, wax & facial boutique.
+				</h1>
+			</div>
+			<!-- ANIMATIONS -->
+			<!-- ANIMATION 1 -->
+			<div
+				class="w-full h-screen py-[7rem] bg-[#e5dede] flex items-center justify-center"
+			>
+				<!-- MAIN ELEMENT -->
+				<div
+					class="main-element scroll-animate"
+					style="
+						background: url('./assets/images/img-hi-2_2x.jpg')
+							no-repeat;
+						transform: matrix(1, 0, 0, 1, 0, 0);
+						height: 38vw;
+						width: 28vw;
+						background-size: cover;
+					"
+				>
+					<!-- SUB ELEMENT -->
+					<div
+						class="scroll-animate"
+						style="
+							top: 50%;
+							left: 0;
+							transform: translateX(-75%) translateY(-50%);
+							position: absolute;
+						"
+					>
+						<!-- SUB IMGS -->
+						<div
+							style="
+								background: url('./assets/images/img-hi-1_2x.jpg')
+									no-repeat;
+								transform: matrix(1, 0, 0, 1, 0, 0);
+								height: 22vw;
+								width: 22vw;
+								background-size: cover;
+							"
+						>
+							<span
+								class="scroll-animate"
+								style="
+									position: absolute;
+									bottom: 0;
+									left: 2rem;
+									transform: translateY(50%) rotate(-16deg);
+									z-index: 10;
+								"
+							>
+								<strong class="text-8xl text-[#f95b5b]"
+									>Cure</strong
+								>
+							</span>
+							<img
+								src="./assets/images/hand.png"
+								class="scroll-animate"
+								style="
+									height: 20vw;
+									bottom: 0;
+									left: 3rem;
+									transform: translateX(-75%) translateY(60%);
+								"
+								alt=""
+							/>
+						</div>
+					</div>
+					<!-- TEXT ELEMENT -->
+					<div
+						class="scroll-animate"
+						style="
+							position: absolute;
+							top: 12%;
+							left: 100%;
+							width: 80%;
+						"
+					>
+						<div
+							style="
+								left: 0px;
+								top: 59px;
+								opacity: 1;
+								transform: translate3d(0px, -62px, 0px);
+							"
+						>
+							<h2
+								style="
+									width: 120%;
+									transform: translateX(-13%);
+									font-size: 3.6rem;
+								"
+								class="text-white"
+							>
+								Hi, meet <br />Cure.
+							</h2>
+							<div class="top-[6rem] relative">
+								<div
+									style="
+										padding-left: 1rem;
+										padding-right: 1rem;
+										transform: matrix(1, 0, 0, 1, 0, 0);
+										font-weight: 600;
+										color: #fff;
+										text-transform: uppercase;
+									"
+								>
+									<p class="text-3xl">
+										A customizable, natural product-based,
+										nail & wax boutique focused on you.
+									</p>
+									<a
+										href="/"
+										style="
+											transform: matrix(1, 0, 0, 1, 0, 0);
+											bottom: -4rem;
+											left: 30%;
+											font-size: 6rem;
+											position: absolute;
+										"
+									>
+										<strong class="text-10xl text-[#f95b5b]"
+											>+</strong
+										>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- DECO -->
+					<img
+						src="./assets/images/grey-green-group.png"
+						class="scroll-animate"
+						alt=""
+						style="
+							position: absolute;
+							height: 18vw;
+							top: 3rem;
+							left: -23.5rem;
+							z-index: -1;
+						"
+					/>
+				</div>
+			</div>
+			<!-- ANIMATION 2 -->
+			<div
+				class="w-full h-screen grid grid-cols-2 relative overflow-visible bg-[#c1c9d0]"
+			>
+				<div
+					class="w-full h-full overflow-hidden image-animate scroll-animate"
+				>
+					<img
+						src="./assets/images/img-mood-3.jpg"
+						alt=""
+						class="w-full h-full object-cover"
+					/>
+				</div>
+				<div
+					class="w-full h-full overflow-hidden image-animate scroll-animate"
+				>
+					<img
+						src="./assets/images/img-mood-2.jpg"
+						alt=""
+						class="w-full h-full object-cover"
+					/>
+				</div>
+
+				<!-- OTHER -->
+				<div
+					class="slide-y-img-animate scroll-animate absolute z-10"
+					style="height: 22vw"
+				>
+					<img
+						src="./assets/images/img-mood-1_2x.jpg"
+						alt=""
+						class="w-full h-full object-cover"
+					/>
+				</div>
+			</div>
+			<!-- ANIMATION 3 -->
+			<div class="bg-[#c1c9d0] w-full p-[8rem]"></div>
+			<div
+				class="w-full h-screen bg-[#c1c9d0] flex relative overflow-hidden"
+			>
+				<!-- MAIN TITLE -->
+				<h3
+					class="text-white text-6xl absolute top-[20%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center scroll-animate z-10"
+				>
+					<div><span>Clean is the culture.</span></div>
+					<div>
+						<span>
+							<strong class="text-red-400">Cure</strong>
+							<span>is the name.</span>
+						</span>
+					</div>
+				</h3>
+				<div
+					class="image-animate overflow-hidden scroll-animate"
+					style="height: 100%; width: 60vw"
+				>
+					<img
+						src="./assets/images/Img_2.png"
+						class="w-full h-full"
+						alt=""
+					/>
+				</div>
+				<div class="w-full h-full overflow-hidden relative">
+					<!-- DESC -->
+					<div
+						class="top-[20rem] left-[4rem] absolute max-w-[400px] scroll-animate"
+					>
+						<p>
+							We focus on what others don’t: your health & your
+							happiness.
+						</p>
+						<p>
+							Cure uses hospital grade sanitation methods,
+							including sterilizing all metal tools used in
+							services in our Autoclave and offering customers the
+							option to take all single use tools home after each
+							service.
+						</p>
+						<div class="booking mt-[3rem] text-white text-2xl">
+							<a href="/" class=""> Book an appointment </a>
+						</div>
+					</div>
+					<!-- IMGS -->
+					<div
+						class="scroll-animate"
+						style="
+							position: absolute;
+							bottom: 18rem;
+							right: 13rem;
+							z-index: 10;
+						"
+					>
+						<img
+							src="./assets/images/img-clean-1_2x.jpg"
+							alt=""
+							style="height: 15vw; width: auto"
+							class="z-[10] scroll-animate"
+						/>
+						<img
+							src="./assets/images/dots.png"
+							alt=""
+							style="
+								z-index: -1;
+								height: 5vw;
+								bottom: 0;
+								right: 0;
+								transform: translateX(25%) translateY(50%);
+							"
+							class="absolute scroll-animate"
+						/>
+					</div>
+
+					<img
+						src="./assets/images/img-clean-2_2x.jpg"
+						alt=""
+						class="scroll-animate"
+						style="
+							height: 19vw;
+							width: auto;
+							position: absolute;
+							bottom: -3rem;
+							left: 50%;
+							transform: translateX(-50%) translateY(0);
+						"
+					/>
+				</div>
+			</div>
+			<!-- ANIMATION 4 -->
+			<div
+				class="bg-[#e5dede] w-full min-h-screen py-[7rem] relative flex flex-col items-center justify-start"
+			>
+				<!-- TITLE -->
+				<div
+					class="text-center w-fit overflow-visible title-animate scroll-animate my-[5rem] relative"
+				>
+					<h3 class="text-white text-6xl">Our Services</h3>
+					<img
+						src="./assets/images/flower.png"
+						class=""
+						alt=""
+						style="
+							height: 5rem;
+							top: 50%;
+							left: 50%;
+							transform: translateX(-50%) translateY(-50%);
+							margin-top: -1rem;
+							z-index: -1;
+							position: absolute;
+						"
+					/>
+				</div>
+				<!-- COTENT -->
+				<div
+					class="mt-[2rem] relative overflow-visible z-10 scroll-animate"
+				>
+					<!-- ITEM 1 -->
+					<div
+						class="scroll-animate"
+						style="
+							height: 38vw;
+							width: 28vw;
+							z-index: 0;
+							background: url('./assets/images/img-our-services-2_2x.jpg')
+								no-repeat center center;
+							background-size: cover;
+						"
+					>
+						<span
+							class="absolute left-0 -bottom-[40px] text-2xl font-semibold text-[#8c9a65]"
+							>Manis</span
+						>
+					</div>
+					<!-- ITEM 2 -->
+					<div
+						class="scroll-animate"
+						style="
+							position: absolute;
+							height: 25vw;
+							width: 22vw;
+							top: 50%;
+							left: 0;
+							margin-left: -2rem;
+							margin-bottom: 0;
+							z-index: 1;
+							background: url('./assets/images/img-our-services-1_2x.jpg')
+								no-repeat center center;
+							background-size: cover;
+							transform: translateX(-75%) translateY(-50%);
+							margin-top: 2rem;
+						"
+					>
+						<span
+							class="absolute left-0 -bottom-[40px] text-2xl font-semibold text-[#8c9a65]"
+							>Pedis</span
+						>
+					</div>
+					<!-- ITEM 3 -->
+					<div
+						class="scroll-animate"
+						style="
+							position: absolute;
+							height: 21vw;
+							width: 19vw;
+							top: 2rem;
+							right: 2.8rem;
+							transform: translateX(100%);
+							margin-top: 0;
+							background: url('./assets/images/img-our-services-3_2x.jpg')
+								no-repeat center center;
+							background-size: cover;
+						"
+					>
+						<span
+							class="absolute right-0 -top-[40px] text-2xl font-semibold text-[#8c9a65]"
+							>Waxing</span
+						>
+					</div>
+					<!-- DECO 1 -->
+					<img
+						src="./assets/images/green-dots-top.png"
+						alt=""
+						style="
+							position: absolute;
+							top: 2rem;
+							left: -15rem;
+							height: 13vw;
+							z-index: -1;
+						"
+					/>
+					<!-- DECO 2 -->
+					<img
+						src="./assets/images/dots.png"
+						alt=""
+						style="
+							position: absolute;
+							bottom: 13rem;
+							right: -22rem;
+							height: 5vw;
+							z-index: -1;
+						"
+					/>
+
+					<!-- TEXT  -->
+					<div
+						class="scroll-animate"
+						style="
+							bottom: 7rem;
+							right: 2.8rem;
+							transform: translateX(100%) translateY(100%)
+								translateZ(0);
+							position: absolute;
+						"
+					>
+						<h3 class="text-white text-6xl">
+							<div>Nails. Wax.</div>
+							<div>We are Cure.</div>
+						</h3>
+
+						<div class="booking mt-[3rem] text-red-500 text-2xl">
+							<a href="/" class="">See Our Menu</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ANIMATION 5 -->
+			<div
+				class="w-full h-screen grid grid-cols-2 relative overflow-visible bg-[#c1c9d0]"
+			>
+				<div
+					class="w-full h-full overflow-hidden image-animate scroll-animate"
+				>
+					<img
+						src="./assets/images/img-mood-2-1.jpg"
+						alt=""
+						class="w-full h-full object-cover"
+					/>
+				</div>
+				<div
+					class="w-full h-full overflow-hidden image-animate scroll-animate"
+				>
+					<img
+						src="./assets/images/img-mood-2-2.jpg"
+						alt=""
+						class="w-full h-full object-cover"
+					/>
+				</div>
+			</div>
+			<!-- ANIMATION 6 -->
+			<div
+				class="w-full h-screen overflow-hidden bg-[#8c9a65] relative p-[3rem] flex flex-col"
+			>
+				<!-- Title section -->
+				<div
+					class="pt-[3rem] mb-16 z-10 flex items-center justify-center flex-col gap-3"
+				>
+					<h2
+						class="text-6xl text-white mb-4 title-animate scroll-animate"
+					>
+						We're different.
+					</h2>
+					<p
+						class="text-xl text-white max-w-lg text-center scroll-animate"
+					>
+						Our products focus on preventing aging in the places
+						that matter most: hands & feet.
+					</p>
+				</div>
+
+				<!-- SLIDER -->
+				<div class="slider" id="productSlider">
+					<div class="slide-item">
+						<div
+							class="w-full h-full relative flex items-center justify-center"
+						>
+							<h1 class="text-4xl text-white -rotate-90 absolute">
+								Check All Products
+							</h1>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="w-full h-full relative">
+							<img
+								src="./assets/images/Berry_Preserve.png"
+								alt="Berry Preserve"
+							/>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="w-full h-full relative">
+							<img
+								src="./assets/images/Citrus_Peel.png"
+								alt="Citrus Peel"
+							/>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="w-full h-full relative">
+							<img
+								src="./assets/images/Minty_Matcha.png"
+								alt="Minty Matcha"
+							/>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="w-full h-full relative">
+							<img
+								src="./assets/images/Omega_Strawberry.png"
+								alt="Omega Strawberry"
+							/>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="w-full h-full relative">
+							<img
+								src="./assets/images/Liquid_Gold_Oil.png"
+								alt="Liquid Gold Oil"
+							/>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="w-full h-full relative">
+							<img
+								src="./assets/images/Many_Minerals.png"
+								alt="Many Minerals"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FOOTER -->
+			<!-- Footer -->
+			<div id="footer">
+				<div
+					class="footer-bg relative h-screen flex items-center justify-center"
+					style="
+						background: url(&#39;https://images.ctfassets.net/pzzgna09n4z0/quSoOCXaW46MSu0S8ecme/a0c58fea4d217eb737aef288fc412c77/Img_3.png?w=1920&amp;fm=webp&amp;q=75&#39;)
+							no-repeat center center;
+						background-size: cover;
+					"
+				>
+					<div
+						class="px-[12rem] w-full h-[60vh] flex flex-col item-start justify-between aos-init"
+						data-aos="fade-up"
+						data-aos-duration="1200"
+						data-aos-offset="100"
+						data-aos-easing="cubic-bezier(0.87, 0, 0.13, 1)"
+					>
+						<div
+							class="footer-text-sm font-2xl font-semibold aos-init"
+							data-aos="fade-up"
+							data-aos-delay="150"
+							data-aos-duration="800"
+						>
+							<h3 class="text-white uppercase scroll-animate">
+								Calling all Nail Techs and Waxing Specialists
+							</h3>
+						</div>
+						<div>
+							<div
+								class="footer-text-lg text-white aos-init"
+								data-aos="fade-up"
+								data-aos-delay="300"
+								data-aos-duration="1000"
+							>
+								<h1
+									class="text-4xl md:text-6xl lg:text-7xl font-bold scroll-animate"
+								>
+									We invite <br />
+									you to join <br />
+									Team Cure.
+								</h1>
+							</div>
+							<div
+								class="footer-bg-bottom flex items-center justify-between pt-12 aos-init"
+								data-aos="fade-up"
+								data-aos-delay="450"
+								data-aos-duration="1200"
+							>
+								<button
+									class="group relative text-white font-2xl font-semibold px-4 py-2 scroll-animate"
+								>
+									Apply Now
+									<div
+										class="absolute h-[2px] w-full transition-all duration-300 ease-in-out bg-white bottom-0 left-0 origin-center group-hover:scale-x-0"
+									></div>
+								</button>
+								<div class="relative scroll-animate">
+									<a
+										href="mailto:wenailusa@gmail.com"
+										class="group text-white font-2xl font-semibold relative pb-2"
+									>
+										wenailusa@gmail.com
+										<div
+											class="absolute h-[2px] w-0 duration-300 transition-all ease-in-out bg-white group-hover:w-full bottom-0 left-0"
+										></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom bg-[#e4d9d9] w-full">
+					<div class="px-[12rem] py-[6rem] w-full heif">
+						<div class="flex justify-between items-start">
+							<!-- Left Section -->
+							<div>
+								<h2
+									class="text-4xl font-bold mb-6 text-white font-serif"
+								>
+									Have Questions?
+								</h2>
+								<a
+									href="file:///D:/works/curenails/index.html#"
+									class="text-[#FF4646] text-4xl font-medium relative group inline-block"
+								>
+									Tell us more.
+									<div
+										class="absolute h-0.5 w-full transition-all duration-300 ease-in-out bg-[#FF4646] bottom-[-2px] left-0 origin-center group-hover:scale-x-0"
+									></div>
+								</a>
+							</div>
+							<!-- Middle Links -->
+							<div class="flex flex-col gap-40">
+								<!-- Legal Links -->
+								<div class="flex gap-40">
+									<div class="flex flex-col gap-6">
+										<a
+											href="file:///D:/works/curenails/index.html#"
+											class="group relative text-white hover:text-[#FF4646] transition-colors text-lg font-medium pb-1"
+										>
+											Privacy Policy
+											<div
+												class="absolute bottom-0 w-full h-0.5"
+											>
+												<div
+													class="absolute bottom-0 h-full w-0 bg-[#FF4646] transition-all duration-300 ease-out group-hover:w-full origin-center"
+												></div>
+											</div>
+										</a>
+										<a
+											href="file:///D:/works/curenails/index.html#"
+											class="group relative text-white hover:text-[#FF4646] transition-colors text-lg font-medium pb-1"
+										>
+											Terms of Service
+											<div
+												class="absolute bottom-0 left-0 w-full h-0.5"
+											>
+												<div
+													class="absolute bottom-0 h-full w-0 bg-[#FF4646] transition-all duration-300 ease-out group-hover:w-full origin-center"
+												></div>
+											</div>
+										</a>
+									</div>
+									<!-- Social Links -->
+									<div class="flex flex-col gap-6">
+										<a
+											href="file:///D:/works/curenails/index.html#"
+											class="group relative text-white hover:text-[#FF4646] transition-colors text-lg font-medium pb-1"
+										>
+											Instagram
+											<div
+												class="absolute bottom-0 left-0 w-full h-0.5"
+											>
+												<div
+													class="absolute bottom-0 h-full w-0 bg-[#FF4646] transition-all duration-300 ease-out group-hover:w-full origin-center"
+												></div>
+											</div>
+										</a>
+										<a
+											href="file:///D:/works/curenails/index.html#"
+											class="group relative text-white hover:text-[#FF4646] transition-colors text-lg font-medium pb-1"
+										>
+											Facebook
+											<div
+												class="absolute bottom-0 w-full h-0.5"
+											>
+												<div
+													class="absolute bottom-0 h-full w-0 bg-[#FF4646] transition-all duration-300 ease-out group-hover:w-full origin-center"
+												></div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- Right Logo -->
+								<div class="text-end">
+									<h3 class="text-4xl text-white">
+										Nailed it.
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SCRIPT -->
+		<script>
+			// Add drag to scroll functionality
+			const slider = document.getElementById('productSlider');
+			let isDown = false;
+			let startX;
+			let scrollLeft;
+
+			slider.addEventListener('mousedown', (e) => {
+				isDown = true;
+				slider.classList.add('grabbing');
+				startX = e.pageX;
+				scrollLeft = slider.scrollLeft;
+			});
+
+			slider.addEventListener('mouseleave', () => {
+				isDown = false;
+				slider.classList.remove('grabbing');
+			});
+
+			slider.addEventListener('mouseup', () => {
+				isDown = false;
+				slider.classList.remove('grabbing');
+			});
+
+			slider.addEventListener('mousemove', (e) => {
+				if (!isDown) return;
+				e.preventDefault();
+
+				const x = e.pageX;
+				const walk = startX - x; // Scroll sẽ di chuyển chính xác bằng khoảng cách di chuyển chuột
+				slider.scrollLeft = scrollLeft + walk;
+			});
+
+			// Thêm Intersection Observer để theo dõi các phần tử
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						// Khi phần tử đi vào viewport
+						if (entry.isIntersecting) {
+							entry.target.classList.add('show');
+						} else {
+							// Khi phần tử rời khỏi viewport
+							entry.target.classList.remove('show');
+						}
+					});
+				},
+				{
+					threshold: 0.1, // Hiện animation khi phần tử hiện 10% trong viewport
+				}
+			);
+
+			// Theo dõi tất cả các phần tử có class scroll-animate
+			document
+				.querySelectorAll('.scroll-animate')
+				.forEach((el) => observer.observe(el));
+
+			// Simple parallax effect for banner
+			window.addEventListener('scroll', () => {
+				const parallaxElements = document.querySelectorAll('.parallax');
+				parallaxElements.forEach((element) => {
+					const scrolled = window.pageYOffset;
+					const rate = scrolled * 0.1;
+					element.style.setProperty('--parallax-y', `${rate}px`);
+				});
+			});
+
+			// Handle header animation
+			function handleScroll() {
+				const header = document.getElementById('header');
+				if (window.scrollY > 100) {
+					header.classList.add('scrolled');
+				} else {
+					header.classList.remove('scrolled');
+				}
+			}
+
+			// Initialize scroll handler
+			window.addEventListener('scroll', handleScroll);
+		</script>
+	</body>
+</html>
