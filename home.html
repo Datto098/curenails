@@ -6,23 +6,7 @@
 		<link href="./all.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./styles.css" />
 		<link rel="stylesheet" href="./home.css" />
-
 		<title>Home Page</title>
-		<style>
-			.swiper-slide {
-				width: 400px !important;
-				opacity: 0.4;
-				transition: all 0.3s ease;
-			}
-			.swiper-slide-active {
-				opacity: 1;
-			}
-			.swiper-button-next:after,
-			.swiper-button-prev:after {
-				color: white;
-				font-size: 32px;
-			}
-		</style>
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -761,7 +745,26 @@
 		</div>
 
 		<!-- SCRIPT -->
+		<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
 		<script>
+			// Smooth scroll implementation
+			const lenis = new Lenis({
+				duration: 0.5,
+				easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+				smooth: true,
+				mouseMultiplier: 1.5,
+				smoothTouch: false,
+				touchMultiplier: 2,
+				infinite: false,
+			});
+
+			function raf(time) {
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
+
+			requestAnimationFrame(raf);
+
 			// Add drag to scroll functionality
 			const slider = document.getElementById('productSlider');
 			let isDown = false;
@@ -815,15 +818,17 @@
 			// Theo dõi tất cả các phần tử có class scroll-animate
 			document
 				.querySelectorAll('.scroll-animate')
-				.forEach((el) => observer.observe(el));
-
-			// Simple parallax effect for banner
+				.forEach((el) => observer.observe(el)); // Enhanced parallax effect for banner with no movement
+			let lastScrollTop = 0;
+			let ticking = false;
 			window.addEventListener('scroll', () => {
+				const scrolled = window.pageYOffset;
 				const parallaxElements = document.querySelectorAll('.parallax');
 				parallaxElements.forEach((element) => {
-					const scrolled = window.pageYOffset;
-					const rate = scrolled * 0.1;
-					element.style.setProperty('--parallax-y', `${rate}px`);
+					const scale = 1 + Math.min(scrolled * 0.00006, 1); // Tăng hệ số scale
+					element.style.transform = `translate3d(0, ${
+						scrolled * 0.5
+					}px, 0) scale(${scale.toFixed(4)})`;
 				});
 			});
 
